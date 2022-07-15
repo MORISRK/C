@@ -2,11 +2,11 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Install') {
             steps {
-                echo 'Gudda'
-                echo 'Akshansh'
-            }
+                sh '''
+                      apt install pip
+                '''
         }
     }
 }
