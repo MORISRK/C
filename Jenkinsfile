@@ -4,9 +4,7 @@ pipeline {
     stages {
         stage('Install') {
             steps {
-                sh '''
-                      apt install pip
-                '''
+                sh 'apt install pip'
         }
     }
 }
